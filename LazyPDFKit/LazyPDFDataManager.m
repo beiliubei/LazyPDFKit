@@ -186,7 +186,7 @@ static LazyPDFDataManager *instance = nil;
     NSEntityDescription *entityDesc = [NSEntityDescription entityForName:annotationEntity inManagedObjectContext:context];
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
-    NSPredicate *pred =[NSPredicate predicateWithFormat:@"(page=%@)",page];
+    NSPredicate *pred =[NSPredicate predicateWithFormat:@"file.filePath == %@ AND (page=%@)",filePath, page];
     [request setPredicate:pred];
     
     NSError *error;
