@@ -1,4 +1,4 @@
-# LazyPDFKit
+# LazyPDFKit [![Build Status](https://travis-ci.org/worgock/LazyPDFKit.svg?branch=master)](https://travis-ci.org/worgock/LazyPDFKit)
 An IOS PDF Framework written in Objective-C
 
 This repo based on https://github.com/lazyprogram/LazyPDFKit and is  no longer maintained by its author. I have cloned LazyPDFKit to continue its develop and support.
