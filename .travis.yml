@@ -1,0 +1,3 @@
+language: objective-c
+xcode_workspace: LazyPDFKit.xcworkspace
+xcode_scheme: LazyPDFKit
