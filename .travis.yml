@@ -1,3 +1,3 @@
 language: objective-c
-xcode_workspace: LazyPDFKit.xcodeproj
+xcode_project: LazyPDFKit.xcodeproj
 xcode_scheme: LazyPDFKit
