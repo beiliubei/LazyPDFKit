@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>LazyPDFKit by worgock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">LazyPDFKit</h1>
+      <h2 class="project-tagline">An iOS PDF Framework written in Objective-C</h2>
+      <a href="https://github.com/worgock/LazyPDFKit" class="btn">View on GitHub</a>
+      <a href="https://github.com/worgock/LazyPDFKit/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/worgock/LazyPDFKit/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="lazypdfkit" class="anchor" href="#lazypdfkit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LazyPDFKit</h1>
+
+<p>An IOS PDF Framework written in Objective-C</p>
+
+<p>This repo originally based on <a href="https://github.com/lazyprogram/LazyPDFKit">https://github.com/lazyprogram/LazyPDFKit</a> and no more maintained by the author.</p>
+
+<p><img src="https://cdn.rawgit.com/worgock/LazyPDFKit/master/Screenshots/Screenshot1.png" alt="Screenshot1"></p>
+
+<h1>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h1>
+
+<ul>
+<li>PDF annotation</li>
+<li>Free hand draw tool</li>
+<li>Insert text</li>
+<li>Highlight text</li>
+<li>Draw line</li>
+<li>Draw boxes and circle</li>
+<li>Undo, Redo and Clear</li>
+<li>Change Color, Size and Opacity</li>
+<li>Thumbnail View</li>
+<li>Print</li>
+<li>Bookmark</li>
+<li>Email PDF</li>
+</ul>
+
+<h1>
+<a id="how-to-use-it" class="anchor" href="#how-to-use-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use it</h1>
+
+<p>Step 1 : Drag and Drop the LazyPDFKit.framework to your project</p>
+
+<p>Step 2 : Enable 'Copy items if needed'</p>
+
+<p>Step 3 : Add to General -&gt; Embedded Binaries</p>
+
+<p>Step 4 : Implement it</p>
+
+<div class="highlight highlight-source-objc"><pre>#<span class="pl-k">import</span> <span class="pl-s"><span class="pl-pds">&lt;</span>LazyPDFKit/LazyPDFKit.h<span class="pl-pds">&gt;</span></span>
+
+<span class="pl-k">@interface</span> <span class="pl-en">ViewController</span> ()&lt;LazyPDFViewControllerDelegate&gt;
+
+<span class="pl-k">@end</span>
+
+<span class="pl-k">@implementation</span> <span class="pl-en">ViewController</span>
+
+- (<span class="pl-k">IBAction</span>)<span class="pl-en">open</span><span class="pl-en">:</span>(<span class="pl-k">id</span>)<span class="pl-smi">sender</span> {
+    [<span class="pl-v">self</span> <span class="pl-c1">openLazyPDF</span>];
+}
+- (<span class="pl-k">void</span>)<span class="pl-en">openLazyPDF</span>
+{
+    <span class="pl-c1">NSString</span> *phrase = <span class="pl-c1">nil</span>; <span class="pl-c">// Document password (for unlocking most encrypted PDF files)</span>
+
+    <span class="pl-c1">NSArray</span> *pdfs = [[<span class="pl-c1">NSBundle</span> <span class="pl-c1">mainBundle</span>] <span class="pl-c1">pathsForResourcesOfType:</span><span class="pl-s"><span class="pl-pds">@"</span>pdf<span class="pl-pds">"</span></span> <span class="pl-c1">inDirectory:</span><span class="pl-c1">nil</span>];
+
+    <span class="pl-c1">NSString</span> *filePath = [pdfs <span class="pl-c1">firstObject</span>]; <span class="pl-c1">assert</span>(filePath != <span class="pl-c1">nil</span>); <span class="pl-c">// Path to first PDF file</span>
+
+    LazyPDFDocument *document = [LazyPDFDocument <span class="pl-c1">withDocumentFilePath:</span>filePath <span class="pl-c1">password:</span>phrase];
+
+    <span class="pl-k">if</span> (document != <span class="pl-c1">nil</span>) <span class="pl-c">// Must have a valid LazyPDFDocument object in order to proceed with things</span>
+    {
+        LazyPDFViewController *lazyPDFViewController = [[LazyPDFViewController <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithLazyPDFDocument:</span>document];
+
+        lazyPDFViewController.<span class="pl-smi">delegate</span> = self; <span class="pl-c">// Set the LazyPDFViewController delegate to self</span>
+
+#<span class="pl-k">if</span> (DEMO_VIEW_CONTROLLER_PUSH == TRUE)
+
+        [<span class="pl-v">self</span>.navigationController <span class="pl-c1">pushViewController:</span>lazyPDFViewController <span class="pl-c1">animated:</span><span class="pl-c1">YES</span>];
+
+#<span class="pl-k">else</span> <span class="pl-c">// present in a modal view controller</span>
+
+        lazyPDFViewController.<span class="pl-smi">modalTransitionStyle</span> = UIModalTransitionStyleCrossDissolve;
+        lazyPDFViewController.<span class="pl-smi">modalPresentationStyle</span> = UIModalPresentationFullScreen;
+
+        [<span class="pl-v">self</span> <span class="pl-c1">presentViewController:</span>lazyPDFViewController <span class="pl-c1">animated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">NULL</span>];
+
+#<span class="pl-k">endif</span> <span class="pl-c">// DEMO_VIEW_CONTROLLER_PUSH</span>
+    }
+    <span class="pl-k">else</span> <span class="pl-c">// Log an error so that we know that something went wrong</span>
+    {
+        <span class="pl-c1">NSLog</span>(<span class="pl-s"><span class="pl-pds">@"</span><span class="pl-c1">%s</span> [LazyPDFDocument withDocumentFilePath:'<span class="pl-c1">%@</span>' password:'<span class="pl-c1">%@</span>'] failed.<span class="pl-pds">"</span></span>, __FUNCTION__, filePath, phrase);
+    }
+}
+
+#<span class="pl-k">pragma mark</span> - LazyPDFViewControllerDelegate methods
+
+- (<span class="pl-k">void</span>)<span class="pl-en">dismissLazyPDFViewController</span><span class="pl-en">:</span>(LazyPDFViewController *)<span class="pl-smi">viewController</span>
+{
+    <span class="pl-c">// dismiss the modal view controller</span>
+    [<span class="pl-v">self</span> <span class="pl-c1">dismissViewControllerAnimated:</span><span class="pl-c1">YES</span> <span class="pl-c1">completion:</span><span class="pl-c1">NULL</span>];
+}</pre></div>
+
+<p>Note : Check out the demo project if you have any doubt.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/worgock/LazyPDFKit">LazyPDFKit</a> is maintained by <a href="https://github.com/worgock">worgock</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
