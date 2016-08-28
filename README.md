@@ -1,11 +1,11 @@
 # LazyPDFKit
 An IOS PDF Framework written in Objective-C
 
-This repo based on https://github.com/lazyprogram/LazyPDFKit and was originally no longer maintained from the author
+This repo based on https://github.com/lazyprogram/LazyPDFKit and is  no longer maintained by its author. I have cloned LazyPDFKit to continue its develop and support.
 
-![Screenshot1](/../master/Screenshots/Screenshot1.png?raw=true "Screenshot1")
+![Screenshot1](https://cdn.rawgit.com/worgock/LazyPDFKit/master/Screenshots/Screenshot1.png)
 
-#Features
+## Features
 * PDF annotation
 * Free hand draw tool
 * Insert text
@@ -14,13 +14,13 @@ This repo based on https://github.com/lazyprogram/LazyPDFKit and was originally 
 * Draw boxes and circle
 * Undo, Redo and Clear
 * Change Color, Size and Opacity
-* Thumbanail View
+* Thumbnail View
 * Print
 * Bookmark
 * Email PDF
 
 
-#How to use it
+## How to use it
 Step 1 : Drag and Drop the LazyPDFKit.framework to your project
 
 Step 2 : Enable 'Copy items if needed'
@@ -29,7 +29,7 @@ Step 3 : Add to General -> Embedded Binaries
 
 Step 4 : Implement it
 
-```
+```objc
 #import <LazyPDFKit/LazyPDFKit.h>
 
 @interface ViewController ()<LazyPDFViewControllerDelegate>
