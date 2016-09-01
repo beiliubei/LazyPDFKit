@@ -1,11 +1,11 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ThumbsViewController.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFConstants.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ThumbsViewController.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ThumbsMainToolbar.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/UIXToolbarView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbsView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbRequest.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbCache.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDocument.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsViewController.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFConstants.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsViewController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsMainToolbar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/UIXToolbarView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbsView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbRequest.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbCache.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDocument.h

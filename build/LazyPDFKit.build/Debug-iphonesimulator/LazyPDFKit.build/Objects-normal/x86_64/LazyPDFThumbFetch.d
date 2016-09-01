@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbFetch.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbFetch.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbQueue.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbRender.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbCache.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbRequest.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbView.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbFetch.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbFetch.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbQueue.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbRender.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbCache.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbRequest.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbView.h

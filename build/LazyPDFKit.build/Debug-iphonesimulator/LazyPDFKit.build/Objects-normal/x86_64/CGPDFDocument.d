@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/CGPDFDocument.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/CGPDFDocument.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/CGPDFDocument.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/CGPDFDocument.h

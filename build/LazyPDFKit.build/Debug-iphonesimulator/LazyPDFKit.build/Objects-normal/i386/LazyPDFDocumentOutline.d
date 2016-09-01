@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDocumentOutline.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDocumentOutline.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/CGPDFDocument.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDocumentOutline.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDocumentOutline.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/CGPDFDocument.h

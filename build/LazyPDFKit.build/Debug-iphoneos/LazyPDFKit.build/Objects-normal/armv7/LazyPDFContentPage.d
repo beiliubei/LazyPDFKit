@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFContentPage.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFConstants.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFContentPage.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDrawingView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFContentTile.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/CGPDFDocument.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentPage.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFConstants.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentPage.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDrawingView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentTile.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/CGPDFDocument.h

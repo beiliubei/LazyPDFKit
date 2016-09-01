@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ThumbsMainToolbar.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFConstants.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ThumbsMainToolbar.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/UIXToolbarView.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsMainToolbar.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFConstants.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsMainToolbar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/UIXToolbarView.h

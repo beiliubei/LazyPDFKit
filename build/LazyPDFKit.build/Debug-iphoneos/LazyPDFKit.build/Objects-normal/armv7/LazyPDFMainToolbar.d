@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFMainToolbar.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFConstants.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFMainToolbar.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/UIXToolbarView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDocument.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFMainToolbar.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFConstants.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFMainToolbar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/UIXToolbarView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDocument.h

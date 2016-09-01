@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFPopoverView.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFPopoverView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ARCMacros.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFPopoverView.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFPopoverView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ARCMacros.h

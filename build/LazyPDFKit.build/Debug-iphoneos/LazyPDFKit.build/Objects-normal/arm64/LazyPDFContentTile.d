@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFContentTile.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFContentTile.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentTile.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentTile.h

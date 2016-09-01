@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorIndicatorView.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorIndicatorView.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorIndicatorView.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorIndicatorView.h

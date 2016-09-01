@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFTouchView.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFTouchView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/ARCMacros.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFTouchView.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFTouchView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ARCMacros.h

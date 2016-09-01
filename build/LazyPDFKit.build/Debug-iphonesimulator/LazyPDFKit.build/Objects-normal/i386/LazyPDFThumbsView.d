@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbsView.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbsView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbView.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbsView.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbsView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbView.h

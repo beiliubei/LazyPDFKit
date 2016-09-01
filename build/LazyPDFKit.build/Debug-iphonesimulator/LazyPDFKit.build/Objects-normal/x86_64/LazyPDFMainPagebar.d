@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFMainPagebar.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFConstants.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFMainPagebar.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbCache.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFThumbRequest.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDocument.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFMainPagebar.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFConstants.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFMainPagebar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbCache.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbRequest.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDocument.h

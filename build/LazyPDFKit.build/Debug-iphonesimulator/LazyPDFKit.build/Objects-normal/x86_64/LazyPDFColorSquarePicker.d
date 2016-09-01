@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorSquarePicker.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorSquarePicker.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorIndicatorView.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFHSBSupport.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorSquarePicker.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorSquarePicker.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorIndicatorView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFHSBSupport.h

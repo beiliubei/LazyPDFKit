@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDrawingTools.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFDrawingTools.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDrawingTools.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDrawingTools.h

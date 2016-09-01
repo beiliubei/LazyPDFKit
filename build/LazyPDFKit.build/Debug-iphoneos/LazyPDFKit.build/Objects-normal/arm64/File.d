@@ -1,3 +1,3 @@
-dependencies: /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/File.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/File.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/Annotation.h
+dependencies: /Users/worgock/Development/LazyPDFKit/LazyPDFKit/File.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/File.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/Annotation.h

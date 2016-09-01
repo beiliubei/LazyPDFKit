@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorPickerController.m \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorPickerController.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorBarPicker.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorSquarePicker.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFColorPickerNavigationController.h \
-  /Users/ctepv1/Desktop/lazypdfkit2/LazyPDFKit/LazyPDFHSBSupport.h
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorPickerController.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorPickerController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorBarPicker.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorSquarePicker.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorPickerNavigationController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFHSBSupport.h
