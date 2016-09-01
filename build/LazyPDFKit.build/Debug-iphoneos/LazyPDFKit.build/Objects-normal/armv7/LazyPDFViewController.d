@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFViewController.m \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFConstants.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFViewController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDocument.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsViewController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ThumbsMainToolbar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/UIXToolbarView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbsView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbCache.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbRequest.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFThumbQueue.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDrawingView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFPopoverController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/ARCMacros.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFPopoverView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFTouchView.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFPropertyController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFColorPickerController.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFContentPage.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFMainToolbar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFMainPagebar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDrawToolbar.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/LazyPDFDataManager.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/File.h \
+  /Users/worgock/Development/LazyPDFKit/LazyPDFKit/Annotation.h
