@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/worgock/Library/Developer/Xcode/DerivedData/LazyPDFKit-bibpitjgnvtyhhdjtckrdjhlczgd/Build/Products/Debug-iphonesimulator/LazyPDFKit.framework/Headers",
+      'name': "/Users/worgock/Development/LazyPDFKit/build/Release-iphonesimulator/LazyPDFKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -109,7 +109,7 @@
         {
           'type': 'file',
           'name': "LazyPDFKit-Swift.h",
-          'external-contents': "/Users/worgock/Library/Developer/Xcode/DerivedData/LazyPDFKit-bibpitjgnvtyhhdjtckrdjhlczgd/Build/Products/Debug-iphonesimulator/LazyPDFKit.framework/Headers/LazyPDFKit-Swift.h"
+          'external-contents': "/Users/worgock/Development/LazyPDFKit/build/Release-iphonesimulator/LazyPDFKit.framework/Headers/LazyPDFKit-Swift.h"
         },
         {
           'type': 'file',
@@ -210,12 +210,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/worgock/Library/Developer/Xcode/DerivedData/LazyPDFKit-bibpitjgnvtyhhdjtckrdjhlczgd/Build/Products/Debug-iphonesimulator/LazyPDFKit.framework/Modules",
+      'name': "/Users/worgock/Development/LazyPDFKit/build/Release-iphonesimulator/LazyPDFKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/worgock/Development/LazyPDFKit/build/LazyPDFKit.build/Debug-iphonesimulator/LazyPDFKit.build/module.modulemap"
+          'external-contents': "/Users/worgock/Development/LazyPDFKit/build/LazyPDFKit.build/Release-iphonesimulator/LazyPDFKit.build/module.modulemap"
         }
       ]
     }
