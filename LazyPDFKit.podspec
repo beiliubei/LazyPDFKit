@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url = "http://twitter.com/worgock"
 
   spec.platform = :ios, "7.0"
-  spec.requires_arc = true
+  spec.requires_arc = false
   spec.source = { git: "https://github.com/worgock/LazyPDFKit.git", tag: "v#{spec.version}", submodules: true }
   spec.source_files = "LazyPDFKit/**/*.{h,objc}"
 
