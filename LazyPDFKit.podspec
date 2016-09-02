@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "7.0"
   spec.source = { git: "https://github.com/worgock/LazyPDFKit.git", tag: "v1.0.3", submodules: true }
   spec.source_files = "LazyPDFKit/**/*.{h,m}"
+  spec.resources = "LazyPDFKit/**/*.{xcdatamodeld,png,xib}"
   spec.requires_arc = true
 
 end
