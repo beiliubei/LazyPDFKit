@@ -21,14 +21,24 @@ This repo based on https://github.com/lazyprogram/LazyPDFKit and is  no longer m
 
 
 ## How to use it
+
+### Manual install
 Step 1 : Drag and Drop the LazyPDFKit.framework to your project
 
 Step 2 : Enable 'Copy items if needed'
 
 Step 3 : Add to General -> Embedded Binaries
 
-Step 4 : Implement it
+### Pod's way
 
+Add this into your Podfile
+```
+pod 'LazyPDFKit', '~> 1.0.4'
+```
+
+(more info about Cocoapods here(https://cocoapods.org/))
+
+## Example
 ```objc
 #import <LazyPDFKit/LazyPDFKit.h>
 
