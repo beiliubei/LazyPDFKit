@@ -25,7 +25,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIXToolbarView : UIView
+@interface LazyPDFUIXToolbarView : UIView
 
 @end
 
@@ -35,6 +35,6 @@
 //	UIXToolbarShadow class interface
 //
 
-@interface UIXToolbarShadow : UIView
+@interface LazyPDFUIXToolbarShadow : UIView
 
 @end

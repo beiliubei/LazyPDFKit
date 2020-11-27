@@ -25,17 +25,17 @@
 
 
 #import "LazyPDFConstants.h"
-#import "UIXToolbarView.h"
+#import "LazyPDFUIXToolbarView.h"
 
 #import <QuartzCore/QuartzCore.h>
 
-@implementation UIXToolbarView
+@implementation LazyPDFUIXToolbarView
 
 #pragma mark - Constants
 
 #define SHADOW_HEIGHT 4.0f
 
-#pragma mark - UIXToolbarView class methods
+#pragma mark - LazyPDFUIXToolbarView class methods
 
 + (Class)layerClass
 {
@@ -46,7 +46,7 @@
 #endif // end of LazyPDF_FLAT_UI Option
 }
 
-#pragma mark - UIXToolbarView instance methods
+#pragma mark - LazyPDFUIXToolbarView instance methods
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -99,16 +99,16 @@
 //	UIXToolbarShadow class implementation
 //
 
-@implementation UIXToolbarShadow
+@implementation LazyPDFUIXToolbarShadow
 
-#pragma mark - UIXToolbarShadow class methods
+#pragma mark - LazyPDFUIXToolbarShadow class methods
 
 + (Class)layerClass
 {
 	return [CAGradientLayer class];
 }
 
-#pragma mark - UIXToolbarShadow instance methods
+#pragma mark - LazyPDFUIXToolbarShadow instance methods
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

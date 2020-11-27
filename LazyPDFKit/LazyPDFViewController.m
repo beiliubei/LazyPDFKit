@@ -25,7 +25,7 @@
 
 #import "LazyPDFConstants.h"
 #import "LazyPDFViewController.h"
-#import "ThumbsViewController.h"
+#import "LazyPDFThumbsViewController.h"
 #import "LazyPDFThumbCache.h"
 #import "LazyPDFThumbQueue.h"
 #import "LazyPDFContentView.h"
