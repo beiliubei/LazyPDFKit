@@ -25,22 +25,22 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UIXToolbarView.h"
+#import "LazyPDFUIXToolbarView.h"
 
-@class ThumbsMainToolbar;
+@class LazyPDFThumbsMainToolbar;
 
-@protocol ThumbsMainToolbarDelegate <NSObject>
+@protocol LazyPDFThumbsMainToolbarDelegate <NSObject>
 
 @required // Delegate protocols
 
-- (void)tappedInToolbar:(ThumbsMainToolbar *)toolbar doneButton:(UIButton *)button;
-- (void)tappedInToolbar:(ThumbsMainToolbar *)toolbar showControl:(UISegmentedControl *)control;
+- (void)tappedInToolbar:(LazyPDFThumbsMainToolbar *)toolbar doneButton:(UIButton *)button;
+- (void)tappedInToolbar:(LazyPDFThumbsMainToolbar *)toolbar showControl:(UISegmentedControl *)control;
 
 @end
 
-@interface ThumbsMainToolbar : UIXToolbarView
+@interface LazyPDFThumbsMainToolbar : LazyPDFUIXToolbarView
 
-@property (nonatomic, weak, readwrite) id <ThumbsMainToolbarDelegate> delegate;
+@property (nonatomic, weak, readwrite) id <LazyPDFThumbsMainToolbarDelegate> delegate;
 
 - (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title;
 

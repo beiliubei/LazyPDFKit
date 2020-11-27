@@ -24,9 +24,9 @@
 
 
 #import "LazyPDFConstants.h"
-#import "ThumbsMainToolbar.h"
+#import "LazyPDFThumbsMainToolbar.h"
 
-@implementation ThumbsMainToolbar
+@implementation LazyPDFThumbsMainToolbar
 
 #pragma mark - Constants
 
@@ -49,7 +49,7 @@
 
 @synthesize delegate;
 
-#pragma mark - ThumbsMainToolbar instance methods
+#pragma mark - LazyPDFThumbsMainToolbar instance methods
 
 - (instancetype)initWithFrame:(CGRect)frame
 {

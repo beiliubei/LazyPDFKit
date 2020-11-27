@@ -24,22 +24,22 @@
 
 
 #import "LazyPDFConstants.h"
-#import "ThumbsViewController.h"
+#import "LazyPDFThumbsViewController.h"
 #import "LazyPDFThumbRequest.h"
 #import "LazyPDFThumbCache.h"
 #import "LazyPDFDocument.h"
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface ThumbsViewController () <ThumbsMainToolbarDelegate, LazyPDFThumbsViewDelegate>
+@interface LazyPDFThumbsViewController () <LazyPDFThumbsMainToolbarDelegate, LazyPDFThumbsViewDelegate>
 
 @end
 
-@implementation ThumbsViewController
+@implementation LazyPDFThumbsViewController
 {
 	LazyPDFDocument *document;
 
-	ThumbsMainToolbar *mainToolbar;
+	LazyPDFThumbsMainToolbar *mainToolbar;
 
 	LazyPDFThumbsView *theThumbsView;
 
@@ -226,9 +226,9 @@
 	[super didReceiveMemoryWarning];
 }
 
-#pragma mark - ThumbsMainToolbarDelegate methods
+#pragma mark - LazyPDFThumbsMainToolbarDelegate methods
 
-- (void)tappedInToolbar:(ThumbsMainToolbar *)toolbar showControl:(UISegmentedControl *)control
+- (void)tappedInToolbar:(LazyPDFThumbsMainToolbar *)toolbar showControl:(UISegmentedControl *)control
 {
 	switch (control.selectedSegmentIndex)
 	{
@@ -270,7 +270,7 @@
 	}
 }
 
-- (void)tappedInToolbar:(ThumbsMainToolbar *)toolbar doneButton:(UIButton *)button
+- (void)tappedInToolbar:(LazyPDFThumbsMainToolbar *)toolbar doneButton:(UIButton *)button
 {
 	[delegate dismissThumbsViewController:self]; // Dismiss thumbs display
 }
@@ -284,10 +284,10 @@
 
 - (id)thumbsView:(LazyPDFThumbsView *)thumbsView thumbCellWithFrame:(CGRect)frame
 {
-	return [[ThumbsPageThumb alloc] initWithFrame:frame];
+	return [[LazyPDFThumbsPageThumb alloc] initWithFrame:frame];
 }
 
-- (void)thumbsView:(LazyPDFThumbsView *)thumbsView updateThumbCell:(ThumbsPageThumb *)thumbCell forIndex:(NSInteger)index
+- (void)thumbsView:(LazyPDFThumbsView *)thumbsView updateThumbCell:(LazyPDFThumbsPageThumb *)thumbCell forIndex:(NSInteger)index
 {
 	CGSize size = [thumbCell maximumContentSize]; // Get the cell's maximum content size
 
@@ -306,7 +306,7 @@
 	if ([image isKindOfClass:[UIImage class]]) [thumbCell showImage:image]; // Show image from cache
 }
 
-- (void)thumbsView:(LazyPDFThumbsView *)thumbsView refreshThumbCell:(ThumbsPageThumb *)thumbCell forIndex:(NSInteger)index
+- (void)thumbsView:(LazyPDFThumbsView *)thumbsView refreshThumbCell:(LazyPDFThumbsPageThumb *)thumbCell forIndex:(NSInteger)index
 {
 	NSInteger page = (showBookmarked ? [[bookmarked objectAtIndex:index] integerValue] : (index + 1));
 
@@ -339,7 +339,7 @@
 //	ThumbsPageThumb class implementation
 //
 
-@implementation ThumbsPageThumb
+@implementation LazyPDFThumbsPageThumb
 {
 	UIView *backView;
 
@@ -358,7 +358,7 @@
 
 #define CONTENT_INSET 8.0f
 
-#pragma mark - ThumbsPageThumb instance methods
+#pragma mark - LazyPDFThumbsPageThumb instance methods
 
 - (CGRect)markRectInImageView
 {

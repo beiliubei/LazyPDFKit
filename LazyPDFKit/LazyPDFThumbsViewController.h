@@ -25,25 +25,25 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ThumbsMainToolbar.h"
+#import "LazyPDFThumbsMainToolbar.h"
 #import "LazyPDFThumbsView.h"
 
 @class LazyPDFDocument;
-@class ThumbsViewController;
+@class LazyPDFThumbsViewController;
 
-@protocol ThumbsViewControllerDelegate <NSObject>
+@protocol LazyPDFThumbsViewControllerDelegate <NSObject>
 
 @required // Delegate protocols
 
-- (void)thumbsViewController:(ThumbsViewController *)viewController gotoPage:(NSInteger)page;
+- (void)thumbsViewController:(LazyPDFThumbsViewController *)viewController gotoPage:(NSInteger)page;
 
-- (void)dismissThumbsViewController:(ThumbsViewController *)viewController;
+- (void)dismissThumbsViewController:(LazyPDFThumbsViewController *)viewController;
 
 @end
 
-@interface ThumbsViewController : UIViewController
+@interface LazyPDFThumbsViewController : UIViewController
 
-@property (nonatomic, weak, readwrite) id <ThumbsViewControllerDelegate> delegate;
+@property (nonatomic, weak, readwrite) id <LazyPDFThumbsViewControllerDelegate> delegate;
 
 - (instancetype)initWithLazyPDFDocument:(LazyPDFDocument *)object;
 
@@ -55,7 +55,7 @@
 //	ThumbsPageThumb class interface
 //
 
-@interface ThumbsPageThumb : LazyPDFThumbView
+@interface LazyPDFThumbsPageThumb : LazyPDFThumbView
 
 - (CGSize)maximumContentSize;
 
