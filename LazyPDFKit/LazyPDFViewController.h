@@ -49,6 +49,8 @@
 @property (nonatomic , strong) NSNumber *lineWidth;
 @property (nonatomic , strong) NSNumber *lineAlpha;
 
+@property (nonatomic, copy) void(^FinishSignature)(NSString *);
+
 @property (nonatomic, weak, readwrite) id <LazyPDFViewControllerDelegate> delegate;
 
 - (instancetype)initWithLazyPDFDocument:(LazyPDFDocument *)object;

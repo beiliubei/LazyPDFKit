@@ -68,7 +68,7 @@
 
 			CGRect shadowRect = self.bounds; shadowRect.origin.y += shadowRect.size.height; shadowRect.size.height = SHADOW_HEIGHT;
 
-			UIXToolbarShadow *shadowView = [[UIXToolbarShadow alloc] initWithFrame:shadowRect];
+			LazyPDFUIXToolbarShadow *shadowView = [[LazyPDFUIXToolbarShadow alloc] initWithFrame:shadowRect];
 
 			[self addSubview:shadowView]; // Add shadow to toolbar
 		}

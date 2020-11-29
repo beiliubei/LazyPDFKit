@@ -25,7 +25,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UIXToolbarView.h"
+#import "LazyPDFUIXToolbarView.h"
 
 @class LazyPDFMainToolbar;
 @class LazyPDFDocument;
@@ -43,7 +43,7 @@
 
 @end
 
-@interface LazyPDFMainToolbar : UIXToolbarView
+@interface LazyPDFMainToolbar : LazyPDFUIXToolbarView
 
 @property (nonatomic, weak, readwrite) id <LazyPDFMainToolbarDelegate> delegate;
 

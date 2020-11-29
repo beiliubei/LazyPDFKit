@@ -44,7 +44,7 @@
 
 
 @interface LazyPDFViewController () <UIScrollViewDelegate, UIGestureRecognizerDelegate, MFMailComposeViewControllerDelegate, UIDocumentInteractionControllerDelegate,
-LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelegate, ThumbsViewControllerDelegate,LazyPDFDrawingViewDelegate,LazyPDFPopoverControllerDelegate,LazyPDFDrawToolbarDelegate>
+LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelegate, LazyPDFThumbsViewControllerDelegate,LazyPDFDrawingViewDelegate,LazyPDFPopoverControllerDelegate,LazyPDFDrawToolbarDelegate>
 {
     LazyPDFPropertyController *lazyPropertyController;
     LazyPDFPopoverController *popover;
@@ -307,7 +307,8 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     }
     else // We have a "Delegate must respond to -dismissLazyPDFViewController:" error
     {
-        NSAssert(NO, @"Delegate must respond to -dismissLazyPDFViewController:");
+        self.FinishSignature([self flattenPDF]);
+//        NSAssert(NO, @"Delegate must respond to -dismissLazyPDFViewController:");
     }
 }
 
@@ -399,6 +400,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     [flattenPDFButton addTarget:self action:@selector(flattenPDF) forControlEvents:UIControlEventTouchUpInside];
     //[[flattenPDFButton layer] setBorderWidth:2.0];
     //[[flattenPDFButton layer] setBorderColor:[UIColor blueColor].CGColor];
+    flattenPDFButton.hidden = YES;
     [self.view addSubview:flattenPDFButton];
     
     CGRect pagebarRect = self.view.bounds; pagebarRect.size.height = PAGEBAR_HEIGHT;
@@ -432,7 +434,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     [self updateButtonStatus];
     self.lineWidth = [NSNumber numberWithFloat:2.0];
     self.lineAlpha = [NSNumber numberWithFloat:1.0];
-    self.lineColor = [UIColor blueColor];
+    self.lineColor = [UIColor blackColor];
     
     [self.view bringSubviewToFront:flattenPDFButton];
     [flattenPDFButton setUserInteractionEnabled:YES];
@@ -787,7 +789,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     
     if (printInteraction != nil) [printInteraction dismissAnimated:NO];
     
-    ThumbsViewController *thumbsViewController = [[ThumbsViewController alloc] initWithLazyPDFDocument:document];
+    LazyPDFThumbsViewController *thumbsViewController = [[LazyPDFThumbsViewController alloc] initWithLazyPDFDocument:document];
     
     thumbsViewController.title = self.title; thumbsViewController.delegate = self; // ThumbsViewControllerDelegate
     
@@ -812,7 +814,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     [documentInteraction presentOpenInMenuFromRect:button.bounds inView:button animated:YES];
 }
 
-- (void)flattenPDF
+- (NSString*) flattenPDF
 {
     NSURL *url = [document fileURL];
     CGPDFDocumentRef documentLocal = CGPDFDocumentCreateWithURL ((__bridge_retained CFURLRef) url);
@@ -822,14 +824,14 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     
     //Pages
     for (int page=1; page<=[document.pageCount intValue]; page++) {
-        //	Get the current page and page frame
+        //    Get the current page and page frame
         CGPDFPageRef pdfPage = CGPDFDocumentGetPage(documentLocal, page);
         
         const CGRect pageFrame = CGPDFPageGetBoxRect(pdfPage, kCGPDFMediaBox);
         
         UIGraphicsBeginPDFPageWithInfo(pageFrame, nil);
         
-        //	Draw the page (flipped)
+        //    Draw the page (flipped)
         CGContextRef ctx = UIGraphicsGetCurrentContext();
         CGContextSaveGState(ctx);
         CGContextScaleCTM(ctx, 1, -1);
@@ -854,6 +856,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
         [[LazyPDFDataManager sharedInstance] deleteFileByPath:[document filePath]];
         NSLog(@"File saved : %@",[document filePath]);
     }
+    return [document filePath];
 }
 
 - (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar printButton:(UIButton *)button
@@ -969,9 +972,9 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     documentInteraction = nil;
 }
 
-#pragma mark - ThumbsViewControllerDelegate methods
+#pragma mark - LazyPDFThumbsViewControllerDelegate methods
 
-- (void)thumbsViewController:(ThumbsViewController *)viewController gotoPage:(NSInteger)page
+- (void)thumbsViewController:(LazyPDFThumbsViewController *)viewController gotoPage:(NSInteger)page
 {
 #if (LazyPDF_ENABLE_THUMBS == TRUE) // Option
     
@@ -980,7 +983,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
 #endif // end of LazyPDF_ENABLE_THUMBS Option
 }
 
-- (void)dismissThumbsViewController:(ThumbsViewController *)viewController
+- (void)dismissThumbsViewController:(LazyPDFThumbsViewController *)viewController
 {
 #if (LazyPDF_ENABLE_THUMBS == TRUE) // Option
     

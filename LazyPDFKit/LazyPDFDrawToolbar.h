@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UIXToolbarView.h"
+#import "LazyPDFUIXToolbarView.h"
 
 @class LazyPDFDrawToolbar;
 @class LazyPDFDocument;
@@ -21,7 +21,7 @@
 
 @end
 
-@interface LazyPDFDrawToolbar : UIXToolbarView
+@interface LazyPDFDrawToolbar : LazyPDFUIXToolbarView
 
 @property (nonatomic, weak, readwrite) id <LazyPDFDrawToolbarDelegate> delegate;
 @property (nonatomic,strong) UIButton *penButton;

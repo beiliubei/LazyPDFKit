@@ -50,8 +50,8 @@ FOUNDATION_EXPORT const unsigned char LazyPDFKitVersionString[];
 #import <LazyPDFKit/LazyPDFThumbView.h>
 #import <LazyPDFKit/LazyPDFTouchView.h>
 #import <LazyPDFKit/LazyPDFViewController.h>
-#import <LazyPDFKit/ThumbsMainToolbar.h>
-#import <LazyPDFKit/ThumbsViewController.h>
-#import <LazyPDFKit/UIXToolbarView.h>
+#import <LazyPDFKit/LazyPDFThumbsMainToolbar.h>
+#import <LazyPDFKit/LazyPDFThumbsViewController.h>
+#import <LazyPDFKit/LazyPDFUIXToolbarView.h>
 #import <LazyPDFKit/File.h>
 #import <LazyPDFKit/Annotation.h>
