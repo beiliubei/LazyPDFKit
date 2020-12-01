@@ -669,7 +669,7 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
                     if ((mainToolbar.alpha < 1.0f) || (mainPagebar.alpha < 1.0f) || (drawToolbar.alpha < 1.0f)) // Hidden
                     {
                         [mainToolbar showToolbar]; [mainPagebar showPagebar]; [drawToolbar showToolbar]; // Show
-                        flattenPDFButton.hidden = NO;
+//                        flattenPDFButton.hidden = NO;
                     }
                 }
             }
@@ -781,6 +781,11 @@ LazyPDFMainToolbarDelegate, LazyPDFMainPagebarDelegate, LazyPDFContentViewDelega
     [self closeDocument]; // Close LazyPDFViewController
     
 #endif // end of LazyPDF_STANDALONE Option
+}
+
+- (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar cancelButton:(UIButton *)button
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar thumbsButton:(UIButton *)button

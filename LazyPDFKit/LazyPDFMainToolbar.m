@@ -86,6 +86,27 @@
 		CGFloat titleX = BUTTON_X; CGFloat titleWidth = (viewWidth - (titleX + titleX));
 
 		CGFloat leftButtonX = BUTTON_X; // Left-side button start X position
+        
+        UIFont *cancelButtonFont = [UIFont systemFontOfSize:BUTTON_FONT_SIZE];
+        NSString *cancelButtonText = NSLocalizedString(@"Cancel", @"button");
+        CGSize cancelButtonSize = [cancelButtonText sizeWithFont:cancelButtonFont];
+        CGFloat cancelButtonWidth = (cancelButtonSize.width + TEXT_BUTTON_PADDING);
+
+        UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        cancelButton.frame = CGRectMake(leftButtonX, BUTTON_Y, cancelButtonWidth, BUTTON_HEIGHT);
+        [cancelButton setTitleColor:[UIColor colorWithWhite:0.0f alpha:1.0f] forState:UIControlStateNormal];
+        [cancelButton setTitleColor:[UIColor colorWithWhite:1.0f alpha:1.0f] forState:UIControlStateHighlighted];
+        [cancelButton setTitle:cancelButtonText forState:UIControlStateNormal]; cancelButton.titleLabel.font = cancelButtonFont;
+        [cancelButton addTarget:self action:@selector(cancelButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [cancelButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
+        [cancelButton setBackgroundImage:buttonN forState:UIControlStateNormal];
+        cancelButton.autoresizingMask = UIViewAutoresizingNone;
+        //doneButton.backgroundColor = [UIColor grayColor];
+        cancelButton.exclusiveTouch = YES;
+
+        [self addSubview:cancelButton]; leftButtonX += (cancelButtonWidth + buttonSpacing);
+
+        titleX += (cancelButtonWidth + buttonSpacing); titleWidth -= (cancelButtonWidth + buttonSpacing);
 
 #if (LazyPDF_STANDALONE == FALSE) // Option
 
@@ -326,6 +347,11 @@
 - (void)doneButtonTapped:(UIButton *)button
 {
 	[delegate tappedInToolbar:self doneButton:button];
+}
+
+- (void) cancelButtonTapped: (UIButton *)button
+{
+    [delegate tappedInToolbar:self cancelButton:button];
 }
 
 - (void)thumbsButtonTapped:(UIButton *)button

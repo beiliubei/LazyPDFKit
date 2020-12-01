@@ -35,6 +35,7 @@
 @required // Delegate protocols
 
 - (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar doneButton:(UIButton *)button;
+- (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar cancelButton:(UIButton *)button;
 - (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar thumbsButton:(UIButton *)button;
 - (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar exportButton:(UIButton *)button;
 - (void)tappedInToolbar:(LazyPDFMainToolbar *)toolbar printButton:(UIButton *)button;
